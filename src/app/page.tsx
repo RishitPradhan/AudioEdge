@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeatureBar from "@/components/FeatureBar";
+import About from "@/components/About";
 import ProfessionalModules from "@/components/ProfessionalModules";
 import CourseDetails from "@/components/CourseDetails";
 import ContactForm from "@/components/ContactForm";
@@ -17,7 +18,6 @@ export default function Home() {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
-    // Initial check
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -25,8 +25,9 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar scrolled={scrolled} />
-      <Hero scrolled={scrolled} />
+      <Hero />
       <FeatureBar />
+      <About />
       <ProfessionalModules />
       <CourseDetails />
       <ContactForm />
