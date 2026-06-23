@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0A0A0A;
+  --color-gold: #CBAA5C; /* A more refined, elegant champagne gold */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-heading: var(--font-montserrat), sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-dark);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-[#0A0A0A] font-medium py-3.5 px-8 rounded-full transition-all duration-300 hover:bg-white hover:shadow-[0_4px_20px_rgba(203,170,92,0.3)] active:scale-95;
+  }
+  .btn-secondary {
+    @apply border border-white/30 text-white font-medium py-3.5 px-8 rounded-full transition-all duration-300 hover:bg-white hover:text-[#0A0A0A] active:scale-95;
+  }
+  .glass-card {
+    @apply bg-[#111111] border border-white/5 rounded-2xl p-8 transition-all duration-500 hover:border-gold/30 hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)];
+  }
+}
