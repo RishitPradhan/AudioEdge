@@ -25,17 +25,6 @@ export default function Footer() {
             <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-8 font-light">
               Audio Edge Academy is a premier institution dedicated to shaping the next generation of audio engineers and sound designers.
             </p>
-            <div className="flex gap-4 font-bold text-xs">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#0A0A0A] hover:bg-gold transition-colors">
-                FB
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#0A0A0A] hover:bg-gold transition-colors">
-                IG
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#0A0A0A] hover:bg-gold transition-colors">
-                YT
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -76,8 +65,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40 font-medium">
           <p>&copy; {currentYear} Audio Edge Academy. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

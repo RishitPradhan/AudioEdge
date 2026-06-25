@@ -20,7 +20,7 @@ export default function About() {
         >
           <div className="absolute -inset-4 bg-gold/15 blur-3xl rounded-full opacity-40 z-0" />
           <Image 
-            src="/new_about.png" 
+            src="/studio_hero_students_logo.png" 
             alt="Students in studio" 
             fill
             className="relative z-10 rounded-2xl shadow-2xl border border-white/10 object-cover" 

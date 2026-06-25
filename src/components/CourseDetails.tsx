@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, MapPin, Calendar, Clock, IndianRupee } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CourseDetails() {
   const highlights = [
@@ -75,7 +76,7 @@ export default function CourseDetails() {
               <p className="text-white/50 text-[10px] font-bold uppercase tracking-wider mb-2">Investment</p>
               <div className="flex items-center gap-1 text-gold text-3xl sm:text-4xl font-black">
                 <IndianRupee className="w-7 h-7" strokeWidth={3} />
-                10,000
+                9,999
               </div>
             </div>
           </motion.div>
@@ -134,9 +135,9 @@ export default function CourseDetails() {
                 </div>
               </div>
             </div>
-            <button className="btn-primary w-full">
+            <Link href="#contact-us" className="btn-primary w-full block text-center">
               Secure Your Seat
-            </button>
+            </Link>
           </motion.div>
 
         </div>

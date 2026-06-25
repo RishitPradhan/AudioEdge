@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, Clock } from "lucide-react";
 
 const courses = [
-  { id: "01", title: "Basic of Live Sound", duration: "1 DAY", image: "/new_course1.png" },
-  { id: "02", title: "Loudspeaker & Mic", duration: "1 DAY", image: "/new_course2.png" },
-  { id: "03", title: "Crossover Basics", duration: "1 DAY", image: "/new_about.png" },
-  { id: "04", title: "Cables & Connectors", duration: "1 DAY", image: "/new_course1.png" },
-  { id: "05", title: "Digital Console", duration: "1 DAY", image: "/new_course2.png" }
+  { id: "01", title: "Basic of Live Sound", duration: "July 1st - 5th", image: "/new_course1.png" },
+  { id: "02", title: "Loudspeaker & Mic", duration: "July 1st - 5th", image: "/new_course2.png" },
+  { id: "03", title: "Crossover Basics", duration: "July 1st - 5th", image: "/new_about.png" },
+  { id: "04", title: "Cables & Connectors", duration: "July 1st - 5th", image: "/new_course1.png" },
+  { id: "05", title: "Digital Console", duration: "July 1st - 5th", image: "/new_course2.png" }
 ];
 
 export default function ProfessionalModules() {
@@ -28,6 +28,9 @@ export default function ProfessionalModules() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
               Professional Audio Training
             </h2>
+            <p className="text-white/60 text-sm sm:text-base mt-2 font-medium tracking-wide">
+              Basics and Fundamentals of Live Sound
+            </p>
           </div>
           <Link href="#all-courses" className="btn-secondary flex items-center gap-2 group self-start sm:self-auto whitespace-nowrap text-sm">
             View All
